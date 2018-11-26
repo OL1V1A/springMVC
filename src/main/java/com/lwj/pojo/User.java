@@ -1,10 +1,15 @@
 package com.lwj.pojo;
 
+
 public class User {
     private long id;
     private String name;
     private String password;
     private String phone;
+
+    public User(){
+
+    }
 
     public long getId() {
         return id;

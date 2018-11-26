@@ -5,6 +5,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.aop.framework.AopProxyUtils;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.BridgeMethodResolver;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ClassUtils;
@@ -18,6 +19,7 @@ import static javafx.scene.input.KeyCode.T;
 
 @Aspect
 @Component
+@EnableAspectJAutoProxy
 public class LwjAop {
 
     private <T extends Annotation> T  getMethodAnnotation(AnnotatedElement ae , Class<T> clazz){
