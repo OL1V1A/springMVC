@@ -31,7 +31,7 @@ public class UserServiceImpl implements IUserService {
     public void updateById(long id) throws Exception {
             userDao.updateById(id);
 //        try{
-            int c = 1/0;
+//            int c = 1/0;
 //        }catch(Exception e){
 //            e.printStackTrace();
 //            TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();

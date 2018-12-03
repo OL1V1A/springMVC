@@ -1,6 +1,7 @@
 package com.lwj.aop;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,7 +35,7 @@ public class LogAop {
     }
 
     @AfterThrowing(value = "pointCut()" ,throwing = "exception")
-    public void endThrowing(JoinPoint joinPoint,Exception exception){
+    public void endThrowing(JoinPoint joinPoint, Exception exception){
         logger.error("aop "+joinPoint.getSignature().getName()+" endThorwing" + exception);
     }
 }
