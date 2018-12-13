@@ -6,27 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6918606d-c264-4352-86d4-d43ca37b5d2f" name="Default Changelist" comment="xml">
+    <list default="true" id="6918606d-c264-4352-86d4-d43ca37b5d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestLambda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lwj/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lwj/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lwj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lwj/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lwj/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lwj/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/Annotation/Lwj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/Annotation/Lwj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/aop/LwjAop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/aop/LwjAop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/common/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/common/LoginRealm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/HomeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/TestLambda.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/TestLambda.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,7 +38,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="6746" />
+          <entry key="java" value="6757" />
           <entry key="jsp" value="392" />
           <entry key="md" value="34" />
           <entry key="properties" value="30" />
@@ -67,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6746" />
+          <entry key="JAVA" value="6757" />
           <entry key="JSP" value="392" />
           <entry key="Markdown" value="34" />
           <entry key="PLAIN_TEXT" value="14" />
@@ -161,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="122">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -674,7 +655,7 @@
       <workItem from="1544143308347" duration="6814000" />
       <workItem from="1544506577181" duration="731000" />
       <workItem from="1544605069237" duration="400000" />
-      <workItem from="1544661544980" duration="218000" />
+      <workItem from="1544661544980" duration="1402000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1542951285944</created>
@@ -683,7 +664,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542951285944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="xml">
+      <created>1544661793018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544661793018</updated>
+    </task>
+    <task id="LOCAL-00003" summary="xml">
+      <created>1544661832573</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544661832573</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -719,13 +714,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92573000" />
+    <option name="totallyTimeSpent" value="93757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.211126" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.211126" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -736,7 +731,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.058073655" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3319149" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30496454" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.55744684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1218,8 +1213,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="122">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
