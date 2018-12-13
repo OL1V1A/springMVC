@@ -5,7 +5,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -25,6 +24,7 @@ public class TestLambda {
         List<String> arr = Arrays.asList("q","qw","qwe","qwer","qwert");
         List<String> ll = app(arr,(s) -> s.length() > 3 );
         ll.stream().forEach(System.out::println);
+
     }
 
     public List<String> app(List<String> list, Predicate<String> predicate){

@@ -1,5 +1,7 @@
 package com.lwj.service.impl;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import com.lwj.dao.UserDao;
 import com.lwj.pojo.User;
 import com.lwj.service.IUserService;
@@ -8,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
+import javax.json.Json;
 import javax.servlet.jsp.tagext.TryCatchFinally;
 
 
@@ -19,8 +22,8 @@ public class UserServiceImpl implements IUserService {
 
     public User getUserById(long id) {
         User user = userDao.selectById(id);
-
         return user;
+
     }
 
     public void insertUser(User user) {

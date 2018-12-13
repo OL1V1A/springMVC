@@ -1,9 +1,10 @@
 package com.lwj.controller;
 
 import com.lwj.Annotation.Lwj;
-import com.lwj.dao.UserDao;
 import com.lwj.pojo.User;
 import com.lwj.service.IUserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Lwj(value = Lwj.OUTER)
 public class UserController {
 
+    private final static Logger LOGGER  = LoggerFactory.getLogger(UserController.class);
+
     @Autowired
     private IUserService userService;
 
@@ -23,6 +26,7 @@ public class UserController {
     @ResponseBody
     public String select(@RequestParam Long id){
         User user = userService.getUserById(id);
+        LOGGER.info("user info : " + user.toString() );
         return user.toString();
     }
 
