@@ -18,6 +18,7 @@ import java.util.Map;
 public class LoginController {
 
     @RequestMapping("/json")
+    @ResponseBody
     public Map json(){
         Map<String,Object> map = new HashMap<>();
         map.put("1","java");
