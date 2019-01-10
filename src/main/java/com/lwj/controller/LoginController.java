@@ -54,7 +54,7 @@ public class LoginController {
         return "index";
     }
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/signIn",method = RequestMethod.POST)
     @ResponseBody
     public String login(String username,String password){
 
