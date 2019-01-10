@@ -19,7 +19,6 @@ public class LoginRealm extends AuthorizingRealm {
 
         UsernamePasswordToken usernamePasswordToken = (UsernamePasswordToken) authenticationToken;
         String username = (String) usernamePasswordToken.getPrincipal();
-//        String password = new String((char[])usernamePasswordToken.getCredentials());
         String password = String.valueOf(usernamePasswordToken.getPassword());
         if(null == username){
             throw new UnknownAccountException("用户不存在");
@@ -33,11 +32,6 @@ public class LoginRealm extends AuthorizingRealm {
             SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username,password,realmName);
             return info;
         }
-//        Object pricipal = username;
-//        Object credentials = "123456";
-       // String realmName = this.getName();
-
-        //SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(username,password,realmName);
         return null;
     }
 }

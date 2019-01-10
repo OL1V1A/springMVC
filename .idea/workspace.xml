@@ -8,6 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6918606d-c264-4352-86d4-d43ca37b5d2f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lwj/common/LoginRealm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lwj/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lwj/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-shiro.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/common/LoginRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/common/LoginRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/com/lwj/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/spring-shiro.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springMVC/WEB-INF/classes/spring-shiro.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,129 +30,125 @@
     <session id="801355150">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="3" />
-          <entry key="project.open.time.2" value="3" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.open.time.19" value="4" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="10" />
-          <entry key="java" value="6757" />
-          <entry key="jsp" value="392" />
+          <entry key="java" value="7079" />
+          <entry key="jsp" value="481" />
           <entry key="md" value="34" />
           <entry key="properties" value="30" />
           <entry key="txt" value="4" />
-          <entry key="xml" value="1416" />
+          <entry key="xml" value="1543" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6757" />
-          <entry key="JSP" value="392" />
+          <entry key="JAVA" value="7079" />
+          <entry key="JSP" value="481" />
           <entry key="Markdown" value="34" />
           <entry key="PLAIN_TEXT" value="14" />
           <entry key="Properties" value="30" />
           <entry key="SQL" value="8" />
-          <entry key="XML" value="1408" />
+          <entry key="XML" value="1535" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="Consumer" value="1" />
-          <entry key="class" value="18" />
+          <entry key="class" value="19" />
           <entry key="css" value="1" />
           <entry key="dtd" value="1" />
-          <entry key="java" value="85" />
+          <entry key="java" value="88" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="6" />
+          <entry key="jsp" value="9" />
           <entry key="log" value="1" />
           <entry key="md" value="1" />
           <entry key="pom" value="1" />
-          <entry key="properties" value="12" />
-          <entry key="xml" value="40" />
+          <entry key="properties" value="13" />
+          <entry key="xml" value="45" />
           <entry key="xsd" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
+          <entry key="CLASS" value="19" />
           <entry key="CSS" value="1" />
           <entry key="DTD" value="1" />
-          <entry key="JAVA" value="85" />
-          <entry key="JSP" value="6" />
+          <entry key="JAVA" value="88" />
+          <entry key="JSP" value="9" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="12" />
+          <entry key="Properties" value="13" />
           <entry key="UML" value="2" />
-          <entry key="XML" value="43" />
+          <entry key="XML" value="48" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-db.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/aop/ConfigOfAop.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="541">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.2.RELEASE/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/shiro-ehcache.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -151,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-76">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="741">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,19 +166,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9994">
-              <caret line="568" column="60" selection-start-line="568" selection-start-column="60" selection-end-line="568" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1444">
-              <caret line="99" column="22" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+            <state relative-caret-position="266">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -181,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/aop/LwjAop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
+            <state relative-caret-position="1596">
               <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -199,8 +195,8 @@
       <list>
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -240,9 +236,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lwj/common/UserRealm.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/lwj/aop/LwjAop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lwj/aop/Div.java" />
@@ -257,7 +251,11 @@
         <option value="$PROJECT_DIR$/src/test/java/test/testJson.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/shiro-ehcache.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java" />
       </list>
     </option>
   </component>
@@ -286,6 +284,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springMVC Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="25" />
@@ -298,9 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -359,6 +367,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lwj" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springMVC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springMVC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lwj" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -397,33 +414,22 @@
               <item name="springMVC" type="b2602c69:ProjectViewProjectNode" />
               <item name="springMVC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springMVC" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544059257636" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547021507736" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -655,7 +661,14 @@
       <workItem from="1544143308347" duration="6814000" />
       <workItem from="1544506577181" duration="731000" />
       <workItem from="1544605069237" duration="400000" />
-      <workItem from="1544661544980" duration="1402000" />
+      <workItem from="1544661544980" duration="3073000" />
+      <workItem from="1545120174989" duration="13000" />
+      <workItem from="1545808103573" duration="702000" />
+      <workItem from="1546823499551" duration="12000" />
+      <workItem from="1546997583656" duration="35000" />
+      <workItem from="1546998650187" duration="7062000" />
+      <workItem from="1547080630467" duration="24000" />
+      <workItem from="1547085547324" duration="261000" />
     </task>
     <task id="LOCAL-00001" summary="xml">
       <created>1542951285944</created>
@@ -678,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544661832573</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="xml">
+      <created>1544677128480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544677128480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -714,14 +734,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93757000" />
+    <option name="totallyTimeSpent" value="103537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.211126" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49822065" visible="true" weight="0.21313673" />
+      <window_info id="Structure" order="1" sideWeight="0.5017794" side_tool="true" weight="0.211126" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -731,13 +750,13 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.058073655" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3319149" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.55744684" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36737588" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.203966" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.15886524" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.15319149" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
@@ -749,7 +768,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="JSF" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3297587" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -768,125 +787,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="xml" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/ssm.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-all/1.4.0/shiro-all-1.4.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MAVEN/com.lwj:springMVC:1.0-SNAPSHOT">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.lwj:springMVC:1.0-SNAPSHOT</OriginalElement>
-          <nodes>
-            <node x="" y="">com.lwj:springMVC:1.0-SNAPSHOT</node>
-            <node x="" y="">junit:junit:jar:4.11</node>
-            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">javax:javaee-api:jar:7.0</node>
-            <node x="" y="">javax:javaee-api:jar:7.0/com.sun.mail:javax.mail:jar:1.5.0</node>
-            <node x="" y="">javax:javaee-api:jar:7.0/com.sun.mail:javax.mail:jar:1.5.0/javax.activation:activation:jar:1.1</node>
-            <node x="" y="">org.aspectj:aspectjweaver:jar:1.9.2</node>
-            <node x="" y="">org.springframework:spring-test:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-core:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-core:jar:4.0.2.RELEASE/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-oxm:jar:4.0.2.RELEASE/org.springframework:spring-beans:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-tx:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-jdbc:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aop:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-aop:jar:4.0.2.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-context-support:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-expression:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-orm:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-web:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.springframework:spring-webmvc:jar:4.0.2.RELEASE</node>
-            <node x="" y="">org.mybatis:mybatis:jar:3.2.8</node>
-            <node x="" y="">org.mybatis:mybatis-spring:jar:1.2.2</node>
-            <node x="" y="">mysql:mysql-connector-java:jar:5.1.35</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4</node>
-            <node x="" y="">commons-dbcp:commons-dbcp:jar:1.4/commons-pool:commons-pool:jar:1.5.4</node>
-            <node x="" y="">jstl:jstl:jar:1.2</node>
-            <node x="" y="">log4j:log4j:jar:1.2.17</node>
-            <node x="" y="">org.slf4j:slf4j-api:jar:1.7.12</node>
-            <node x="" y="">org.slf4j:slf4j-log4j12:jar:1.7.12</node>
-            <node x="" y="">com.alibaba:fastjson:jar:1.2.6</node>
-            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13</node>
-            <node x="" y="">org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13/org.codehaus.jackson:jackson-core-asl:jar:1.9.13</node>
-            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.3.1</node>
-            <node x="" y="">commons-fileupload:commons-fileupload:jar:1.3.1/commons-io:commons-io:jar:2.2</node>
-            <node x="" y="">commons-io:commons-io:jar:2.4</node>
-            <node x="" y="">commons-codec:commons-codec:jar:1.10</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-lang:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-lang:jar:1.4.0/org.slf4j:slf4j-api:jar:1.7.21</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-config-core:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-config-ogdl:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-config-ogdl:jar:1.4.0/commons-beanutils:commons-beanutils:jar:1.9.3</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-config-ogdl:jar:1.4.0/commons-beanutils:commons-beanutils:jar:1.9.3/commons-collections:commons-collections:jar:3.2.2</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-config-ogdl:jar:1.4.0/org.slf4j:slf4j-api:jar:1.7.12</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-crypto-core:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-crypto-hash:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-crypto-cipher:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-event:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-core:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-core:jar:1.4.0/org.apache.shiro:shiro-cache:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-web:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-aspectj:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-aspectj:jar:1.4.0/org.aspectj:aspectjrt:jar:1.8.9</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-aspectj:jar:1.4.0/org.aspectj:aspectjweaver:jar:1.8.9</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-ehcache:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-ehcache:jar:1.4.0/net.sf.ehcache:ehcache-core:jar:2.6.11</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-ehcache:jar:1.4.0/net.sf.ehcache:ehcache-core:jar:2.6.11/org.slf4j:slf4j-api:jar:1.6.1</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-guice:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-guice:jar:1.4.0/com.google.inject:guice:jar:3.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-guice:jar:1.4.0/com.google.inject:guice:jar:3.0/javax.inject:javax.inject:jar:1</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-guice:jar:1.4.0/com.google.inject.extensions:guice-multibindings:jar:3.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-hazelcast:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-hazelcast:jar:1.4.0/com.hazelcast:hazelcast:jar:3.7.2</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-quartz:jar:1.4.0</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-quartz:jar:1.4.0/org.opensymphony.quartz:quartz:jar:1.6.1</node>
-            <node x="" y="">org.apache.shiro:shiro-all:pom:1.4.0/org.apache.shiro:shiro-spring:jar:1.4.0</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.576222011983602" x="1457.0" y="1120.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="1010" column="75" lean-forward="true" selection-start-line="1010" selection-start-column="75" selection-end-line="1010" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/hazelcast/hazelcast/3.7.2/hazelcast-3.7.2.jar!/com/hazelcast/util/function/Supplier.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/hazelcast/hazelcast/3.7.2/hazelcast-3.7.2-sources.jar!/com/hazelcast/util/function/Supplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -976,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3838">
-          <caret line="202" column="36" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.6/fastjson-1.2.6.jar!/com/alibaba/fastjson/JSON.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1025,38 +918,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2110">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/stereotype/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="53" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/context/annotation/ClassPathBeanDefinitionScanner.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/stereotype/Component.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE-sources.jar!/org/springframework/stereotype/Controller.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1102,20 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1129,16 +983,6 @@
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1168,6 +1012,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9994">
@@ -1182,39 +1047,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.0.2.RELEASE/spring-web-4.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/common/LoginRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shiro-ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/aop/LwjAop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
+        <state relative-caret-position="1596">
           <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2720#2721#0" expanded="true" />
             <element signature="e#2762#2763#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lwj/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>

@@ -25,20 +25,21 @@
 
     </bean>
 
+    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>
+    </bean>
+
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="realm" ref="loginRealm" />
+        <property name="cacheManager" ref="cacheManager"/>
     </bean>
+
     <bean id="loginRealm" class="com.lwj.common.LoginRealm">
-       <!-- <property name="credentialsMatcher">
-                        &lt;!&ndash;shiro加密策略MD5&ndash;&gt;
-            <bean class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
-                            &lt;!&ndash;加密的策略&ndash;&gt;
-                <property name="hashAlgorithmName" value="SHA1"/>
-                            &lt;!&ndash;加密的次数&ndash;&gt;
-                <property name="hashIterations" value="10"/>
-                <property name="storedCredentialsHexEncoded" value="true"/>
-             </bean>
-        </property>-->
+       <property name="cachingEnabled" value="true"/>
+        <property name="authenticationCachingEnabled" value="true" />
+        <property name="authenticationCacheName" value="authenticationCache" />
+        <property name="authorizationCachingEnabled" value="true" />
+        <property name="authorizationCacheName" value="authorizationCache" />
     </bean>
 
 
