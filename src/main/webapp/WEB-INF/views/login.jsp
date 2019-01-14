@@ -14,7 +14,7 @@
 <body>
 
 
-    <form name="loginForm">
+    <form action="login" name="loginForm">
         用户名:<input type="text" name="username" id="username" /><br/>
         密&nbsp;码:<input type="text" name="password" id="password" ><br/>
         <button type="button" name="submit" id="submit" onclick="doLogin()"><span>登录</span></button>
@@ -27,11 +27,11 @@
         var password = $("#password").val();
         $.ajax({
             type: "POST",
-            url: "/signIn",
+            url: "login",
             data: "username="+username+"&password=" + password,
             success: function(msg){
                 console.log(msg);
-                window.location.href = "/logout";
+                window.location.href = "logout";
             }
         });
     }

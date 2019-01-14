@@ -27,11 +27,11 @@
         var password = $("#password").val();
         $.ajax({
             type: "POST",
-            url: "/login",
+            url: "login",
             data: "username="+username+"&password=" + password,
             success: function(msg){
                 console.log(msg);
-                window.location.href = "/logout";
+                window.location.href = "logout";
             }
         });
     }

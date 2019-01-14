@@ -51,10 +51,10 @@ public class LoginController {
 
     @RequestMapping(value = "/logout",method = RequestMethod.GET)
     public String logout(){
-        return "index";
+        return "success";
     }
 
-    @RequestMapping(value = "/signIn",method = RequestMethod.POST)
+    @RequestMapping(value = "login",method = RequestMethod.POST)
     @ResponseBody
     public String login(String username,String password){
 

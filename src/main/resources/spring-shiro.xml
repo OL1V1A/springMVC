@@ -17,29 +17,29 @@
         <property name="filterChainDefinitions">
             <value>
                 /login = anon
-                /logout = anon
                 /views/index.jsp = anon
+                /logout = anon
                 /** = authc
             </value>
         </property>
 
     </bean>
 
-    <bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
-        <property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>
-    </bean>
+    <!--<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">-->
+        <!--<property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>-->
+    <!--</bean>-->
 
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
         <property name="realm" ref="loginRealm" />
-        <property name="cacheManager" ref="cacheManager"/>
+        <!--<property name="cacheManager" ref="cacheManager"/>-->
     </bean>
 
     <bean id="loginRealm" class="com.lwj.common.LoginRealm">
-       <property name="cachingEnabled" value="true"/>
-        <property name="authenticationCachingEnabled" value="true" />
-        <property name="authenticationCacheName" value="authenticationCache" />
-        <property name="authorizationCachingEnabled" value="true" />
-        <property name="authorizationCacheName" value="authorizationCache" />
+       <!--<property name="cachingEnabled" value="true"/>-->
+        <!--<property name="authenticationCachingEnabled" value="true" />-->
+        <!--<property name="authenticationCacheName" value="authenticationCache" />-->
+        <!--<property name="authorizationCachingEnabled" value="true" />-->
+        <!--<property name="authorizationCacheName" value="authorizationCache" />-->
     </bean>
 
 
