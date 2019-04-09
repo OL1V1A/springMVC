@@ -1,5 +1,6 @@
 package com.lwj.controller;
 
+import com.lwj.Annotation.Lwj;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -35,7 +36,7 @@ public class LoginController {
 
     @RequestMapping(value = "/file/upload" ,method = RequestMethod.POST,produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public String load(@RequestParam("file")  MultipartFile file, HttpServletRequest request) throws IOException {
+    public String load(@RequestParam("file")  MultipartFile file) throws IOException {
         String folder = "D:\\workspace\\idea\\springMVC\\src\\main\\java\\com\\lwj\\controller";
         String fileName = file.getOriginalFilename();
         System.out.println(fileName);
@@ -54,9 +55,17 @@ public class LoginController {
         return "success";
     }
 
+    @RequestMapping(value = "/error",method = RequestMethod.GET)
+    public String error(){
+        return "error";
+    }
+
     @RequestMapping(value = "login",method = RequestMethod.POST)
+    @Lwj(value = Lwj.LwjType.AFTER)
     @ResponseBody
-    public String login(String username,String password){
+    public Map login(String username,String password){
+
+        Map map = new HashMap();
 
         Subject currentUser = SecurityUtils.getSubject();
             UsernamePasswordToken token = new UsernamePasswordToken(username,password);
@@ -67,11 +76,14 @@ public class LoginController {
 
                     System.out.println("登陆成功");
                 }
-            }catch (AuthenticationException ae){
+                map.put("success",true);
+            }catch (Exception ae){
                 System.out.println("登录失败--->" + ae.getMessage());
-                return "用户被锁定";
+                map.put("success",false);
             }
-        return "index";
+
+            return map;
+
 
     }
 }

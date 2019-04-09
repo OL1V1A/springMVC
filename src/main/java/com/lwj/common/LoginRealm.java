@@ -7,9 +7,6 @@ import org.apache.shiro.subject.PrincipalCollection;
 
 public class LoginRealm extends AuthorizingRealm {
 
-//    public String getName(){
-//        return "userRealm";
-//    }
 
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         return null;

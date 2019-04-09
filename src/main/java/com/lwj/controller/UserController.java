@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/user")
-@Lwj(value = Lwj.OUTER)
+@Lwj(value = Lwj.LwjType.OUTER)
 public class UserController {
 
     private final static Logger LOGGER  = LoggerFactory.getLogger(UserController.class);
@@ -26,7 +26,7 @@ public class UserController {
     @ResponseBody
     public String select(@RequestParam Long id){
         User user = userService.getUserById(id);
-        LOGGER.info("user info : " + user.toString() );
+        LOGGER.info("user info : " + user.toString());
         return user.toString();
     }
 

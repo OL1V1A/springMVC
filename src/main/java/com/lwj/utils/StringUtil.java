@@ -62,10 +62,11 @@ public class StringUtil {
     public static Boolean isAllEmpty(Object... o) {
         Object[] arr = o;
         for (int i = 0; i < o.length; i++) {
-            if (!isNullOrEmpty(o[i])) ;
+            if (!isNullOrEmpty(o[i]));
             return false;
         }
         return true;
+
     }
 
     public static Integer toInteger(Object o) {
@@ -128,5 +129,6 @@ public class StringUtil {
         Matcher m = pattern.matcher(str);
         return m.matches();
     }
+
 
 }

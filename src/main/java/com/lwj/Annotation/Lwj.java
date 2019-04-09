@@ -7,10 +7,25 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE,ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Lwj {
-    String FRONT = "front";
-    String AFTER  = "after";
-    String INNER = "inner";
-    String OUTER = "outer";
 
-    String value() default "inner";
+    LwjType value() default LwjType.INNER;
+
+      enum LwjType {
+         INNER("inner"),
+         OUTER("outer"),
+         AFTER("after"),
+         FRONT("front");
+         private String value;
+         LwjType(String name){
+            this.value = name;
+        }
+
+         public String getValue() {
+             return value;
+         }
+
+         public void setValue(String value) {
+             this.value = value;
+         }
+     }
 }

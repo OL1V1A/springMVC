@@ -1,5 +1,6 @@
 package com.lwj.aop;
 
+import com.lwj.Annotation.Lwj;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -21,6 +22,8 @@ public class LogAop {
     }
     @Before("pointCut()")
     public void start(JoinPoint joinPoint){
+        Class<?> clazz = joinPoint.getTarget().getClass();
+        clazz.getAnnotation(Lwj.class);
         logger.info("aop start " +joinPoint.getSignature().getName() +" 方法开始执行,方法参数是"+ Arrays.asList(joinPoint.getArgs()));
     }
 

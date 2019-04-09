@@ -17,6 +17,8 @@
 
     <!-- 自动扫描 -->
     <context:component-scan base-package="com.lwj" />
+        <!--<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+    <!--</context:component-scan>-->
 
     <!-- 导入DAO配置 -->
     <import resource="spring-dao.xml"/>
@@ -24,11 +26,12 @@
     <!-- 导入数据库配置 -->
     <import resource="spring-db.xml"/>
 
+
     <!-- 导入数据库配置 -->
     <import resource="spring-tx.xml"/>
 
     <import resource="spring-shiro.xml" />
 
-    <aop:aspectj-autoproxy />
+
 
 </beans>

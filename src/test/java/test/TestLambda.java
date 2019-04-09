@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -23,11 +24,11 @@ public class TestLambda {
     public void test4(){
         List<String> arr = Arrays.asList("q","qw","qwe","qwer","qwert");
         List<String> ll = app(arr,(s) -> s.length() > 3 );
-        ll.stream().forEach(System.out::println);
+        ll.forEach(System.out::println);
 
     }
 
-    public List<String> app(List<String> list, Predicate<String> predicate){
+    private List<String> app(List<String> list, Predicate<String> predicate){
         List<String> list1 = new ArrayList<>();
         for(String l : list){
             if(predicate.test(l)){
@@ -40,11 +41,12 @@ public class TestLambda {
     //Function<T,R> 函数式接口
     @Test
     public void test3(){
-        int num = getStrNum("asdwerwetwerwqetqrtew",(str) -> str.length());
+        int num = getStrNum("asdwerwetwerwqetqrtew",s -> s.length());
         System.out.println(num);
     }
 
-    public int getStrNum(String str, Function<String,Integer> function){
+    @SuppressWarnings("SameParameterValue")
+    private int getStrNum(String str, Function<String,Integer> function){
         return function.apply(str);
     }
 
@@ -52,12 +54,15 @@ public class TestLambda {
     @Test
     public void test2(){
         List<Integer> list = getNumList(10,() -> (int)(Math.random()*100));
-        list.stream().forEach(System.out::println);
+        list.forEach(System.out::println);
+        Random r = new Random();
+        r.nextInt();
 //        for(Integer aa : list2){
 //            System.out.println(aa);
 //        }
     }
-    public List<Integer> getNumList(int num, Supplier<Integer> supplier){
+    @SuppressWarnings("SameParameterValue")
+    private List<Integer> getNumList(int num, Supplier<Integer> supplier){
         List<Integer> list = new ArrayList<>();
         for (int i = 0;i<num;i++) {
             Integer a = supplier.get();
@@ -72,7 +77,8 @@ public class TestLambda {
         ap(100,(x ->System.out.println("这个数是"+x)));
     }
 
-    public void ap(int x, Consumer<Integer> consumer){
+    @SuppressWarnings("SameParameterValue")
+    private void ap(int x, Consumer<Integer> consumer){
         consumer.accept(x);
     }
 }

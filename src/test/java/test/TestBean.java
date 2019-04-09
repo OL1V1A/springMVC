@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
+import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class TestBean {
@@ -40,5 +41,14 @@ public class TestBean {
         System.out.println(user1 == user2);
 //        System.out.println(supplier.get());
 //        System.out.println(supplier.get());
+    }
+
+    @Test
+    public void double1(){
+
+        double a=2;
+        double b=1.1;
+        System.out.println(new BigDecimal(Double.toString(a)).subtract(new BigDecimal(Double.toString(b))));
+
     }
 }
