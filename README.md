@@ -1,2 +1,2 @@
 # springMVC
-整合了springShiro，springRedis
+整合了springShiro，springRedis,springtx
