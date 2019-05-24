@@ -2,10 +2,8 @@ package test;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.io.File;
+import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -80,5 +78,11 @@ public class TestLambda {
     @SuppressWarnings("SameParameterValue")
     private void ap(int x, Consumer<Integer> consumer){
         consumer.accept(x);
+    }
+    @Test
+    public void getCal(){
+        Calendar calendar = Calendar.getInstance();
+        System.out.println(calendar.get(4));
+        System.out.println(File.separator);
     }
 }

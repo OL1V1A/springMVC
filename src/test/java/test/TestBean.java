@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -50,5 +51,18 @@ public class TestBean {
         double b=1.1;
         System.out.println(new BigDecimal(Double.toString(a)).subtract(new BigDecimal(Double.toString(b))));
 
+    }
+
+    @Test
+    public void cmd() {
+        Process p =null;
+        Runtime runtime = Runtime.getRuntime();
+        try {
+            p = runtime.exec("cmd /c start gpedit.msc");
+            Thread.sleep(10000);
+            p.destroy();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

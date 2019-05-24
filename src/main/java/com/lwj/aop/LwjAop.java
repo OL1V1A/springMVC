@@ -62,7 +62,7 @@ public class LwjAop {
     }
 
 
-    @Pointcut("@annotation(com.lwj.Annotation.Lwj)")
+    @Pointcut("@annotation(com.lwj.Annotation.Lwj) && !@annotation(com.lwj.Annotation.AutoCache)")
     public void pointCut(){
 
     }

@@ -1,9 +1,12 @@
 package com.lwj.pojo;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @Auth: lwj
@@ -17,6 +20,9 @@ public class Person implements Serializable {
 }
 
 class Widget{
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss" )
+    private Date date;
     public synchronized void dot(){
         System.out.println("parent dot()");
     }

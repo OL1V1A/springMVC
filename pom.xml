@@ -219,11 +219,21 @@
       <version>5.0.0.Alpha2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.jodd/jodd-mail -->
+    <dependency>
+      <groupId>org.jodd</groupId>
+      <artifactId>jodd-mail</artifactId>
+      <version>5.0.12</version>
+    </dependency>
+
+
+
 
 
 
     <!-- 上传组件包 end -->
   </dependencies>
+
 
   <build>
     <finalName>springMVC</finalName>

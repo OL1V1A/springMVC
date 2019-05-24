@@ -16,7 +16,7 @@
 
     <form action="login" name="loginForm">
         用户名:<input type="text" name="username" id="username" /><br/>
-        密&nbsp;码:<input type="text" name="password" id="password" ><br/>
+        密&nbsp;码:<input type="text" name="password" id="password" ><span id="warning"></span><br/>
         <button type="button" name="submit" id="submit" onclick="doLogin()"><span>登录</span></button>
     </form>
 
@@ -33,7 +33,9 @@
                 if(resp.success){
                     location.href = "logout";
                 }else{
-                    location.href = "error";
+                    $("#warning").html("登录失败!").css({"color":"red"});
+
+                    //location.href = "error";
                 }
             }
         });

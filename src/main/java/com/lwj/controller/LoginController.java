@@ -45,9 +45,9 @@ public class LoginController {
         return "上传成功";
     }
 
-    @RequestMapping(value = "/log-in",method = RequestMethod.GET)
+    @RequestMapping(value = "log-in",method = RequestMethod.GET)
     public String log_in(){
-        return "login";
+        return "/login";
     }
 
     @RequestMapping(value = "/logout",method = RequestMethod.GET)
@@ -60,7 +60,7 @@ public class LoginController {
         return "error";
     }
 
-    @RequestMapping(value = "login",method = RequestMethod.POST)
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     @Lwj(value = Lwj.LwjType.AFTER)
     @ResponseBody
     public Map login(String username,String password){
