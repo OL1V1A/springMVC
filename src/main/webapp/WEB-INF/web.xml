@@ -63,5 +63,15 @@
     <filter-name>shiroFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+
+  <!--自定义拦截器-->
+  <filter>
+    <filter-name>logFilter</filter-name>
+    <filter-class>com.lwj.reflect.LogFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>logFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   
 </web-app>
