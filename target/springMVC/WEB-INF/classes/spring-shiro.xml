@@ -19,6 +19,7 @@
                 /login = anon
                 /views/index.jsp = anon
                 /logout = anon
+                /json = anon
                 /** = authc
             </value>
         </property>
