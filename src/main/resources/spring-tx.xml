@@ -15,8 +15,8 @@
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
     <bean id="transactionManager"
           class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"  />
+        <property name="dataSource" ref="dataSource"/>
     </bean>
     <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
-    <!--<import resource="spring-db.xml" />-->
+    <import resource="spring-db.xml" />
 </beans>

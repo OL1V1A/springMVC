@@ -19,16 +19,18 @@ public class Person implements Serializable {
     private String name;
 }
 
-class Widget{
+class Widget {
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss" )
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date date;
-    public synchronized void dot(){
+
+    public synchronized void dot() {
         System.out.println("parent dot()");
     }
 }
-class pWidget extends Widget{
-    public synchronized void dot(){
+
+class pWidget extends Widget {
+    public synchronized void dot() {
         System.out.println("child dot()");
         super.dot();
     }

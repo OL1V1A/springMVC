@@ -17,26 +17,26 @@ public class DeadLock {
 
     }
 
-    public static void deadLock(){
+    public static void deadLock() {
         Thread t1 = new Thread(() -> {
-            synchronized (A){
+            synchronized (A) {
                 try {
                     Thread.currentThread().sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                synchronized (B){
+                synchronized (B) {
                     System.out.println("1");
                 }
             }
         });
 
         Thread t2 = new Thread(() -> {
-           synchronized (B){
-               synchronized (A){
-                   System.out.println("2");
-               }
-           }
+            synchronized (B) {
+                synchronized (A) {
+                    System.out.println("2");
+                }
+            }
         });
         t1.start();
         t2.start();

@@ -5,15 +5,15 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd"
        default-lazy-init="true">
 
-<!--shiro filter-->
+    <!--shiro filter-->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
-        <property name="securityManager" ref="securityManager" />
+        <property name="securityManager" ref="securityManager"/>
         <!-- 当访问需要认证的资源时，如果没有认证，那么将自动跳转到该url;如果不配置该属性 默认情况下会到根路径下的login.jsp -->
-        <property name="loginUrl" value="/log-in" />
+        <property name="loginUrl" value="/log-in"/>
         <!-- 配置认证成功后 跳转到那个url上，通常不设置，如果不设置，那么默认认证成功后跳转上上一个url -->
-        <property name="successUrl" value="/views/index.jsp" />
+        <property name="successUrl" value="/views/index.jsp"/>
         <!-- 配置用户没有权限访问资源时 跳转的页面 -->
-        <property name="unauthorizedUrl" value="/user/nopermission" />
+        <property name="unauthorizedUrl" value="/user/nopermission"/>
         <property name="filterChainDefinitions">
             <value>
                 /login = anon
@@ -27,16 +27,16 @@
     </bean>
 
     <!--<bean id="cacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">-->
-        <!--<property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>-->
+    <!--<property name="cacheManagerConfigFile" value="classpath:shiro-ehcache.xml"/>-->
     <!--</bean>-->
 
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
-        <property name="realm" ref="loginRealm" />
+        <property name="realm" ref="loginRealm"/>
         <!--<property name="cacheManager" ref="cacheManager"/>-->
     </bean>
 
     <bean id="loginRealm" class="com.lwj.common.LoginRealm">
-       <!--<property name="cachingEnabled" value="true"/>-->
+        <!--<property name="cachingEnabled" value="true"/>-->
         <!--<property name="authenticationCachingEnabled" value="true" />-->
         <!--<property name="authenticationCacheName" value="authenticationCache" />-->
         <!--<property name="authorizationCachingEnabled" value="true" />-->

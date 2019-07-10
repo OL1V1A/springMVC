@@ -29,19 +29,19 @@ public class LogFilter implements Filter {
     @Override
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain filterChain) throws IOException, ServletException {
 
-        beforeFilter(req,resp);
-        filterChain.doFilter(req,resp);
+        beforeFilter(req, resp);
+        filterChain.doFilter(req, resp);
 
     }
 
-    private void beforeFilter(ServletRequest req, ServletResponse resp){
+    private void beforeFilter(ServletRequest req, ServletResponse resp) {
 
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
         String url = request.getRequestURI();
         String contextPath = request.getLocalAddr();
-        int  port = request.getLocalPort();
+        int port = request.getLocalPort();
         String queryString = request.getQueryString();
-        log.info("请求路径为:" + contextPath +":" + port +url + "\t;请求参数为: " + queryString);
+        log.info("请求路径为:" + contextPath + ":" + port + url + "\t;请求参数为: " + queryString);
     }
 }

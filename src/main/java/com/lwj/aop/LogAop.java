@@ -17,28 +17,29 @@ public class LogAop {
     Logger logger = LoggerFactory.getLogger(LogAop.class);
 
     @Pointcut("execution(* com.lwj.aop.Div.*(..))")
-    public void pointCut(){
+    public void pointCut() {
 
     }
+
     @Before("pointCut()")
-    public void start(JoinPoint joinPoint){
+    public void start(JoinPoint joinPoint) {
         Class<?> clazz = joinPoint.getTarget().getClass();
         clazz.getAnnotation(Lwj.class);
-        logger.info("aop start " +joinPoint.getSignature().getName() +" 方法开始执行,方法参数是"+ Arrays.asList(joinPoint.getArgs()));
+        logger.info("aop start " + joinPoint.getSignature().getName() + " 方法开始执行,方法参数是" + Arrays.asList(joinPoint.getArgs()));
     }
 
     @After("pointCut()")
-    public void end(JoinPoint joinPoint){
-        logger.info("aop end "+joinPoint.getSignature().getName()+" 方法结束");
+    public void end(JoinPoint joinPoint) {
+        logger.info("aop end " + joinPoint.getSignature().getName() + " 方法结束");
     }
 
-    @AfterReturning(value = "pointCut()" ,returning = "result")
-    public void endReturn(JoinPoint joinPoint,Object result){
-        logger.info("aop "+joinPoint.getSignature().getName()+" end return "+result);
+    @AfterReturning(value = "pointCut()", returning = "result")
+    public void endReturn(JoinPoint joinPoint, Object result) {
+        logger.info("aop " + joinPoint.getSignature().getName() + " end return " + result);
     }
 
-    @AfterThrowing(value = "pointCut()" ,throwing = "exception")
-    public void endThrowing(JoinPoint joinPoint, Exception exception){
-        logger.error("aop "+joinPoint.getSignature().getName()+" endThorwing" + exception);
+    @AfterThrowing(value = "pointCut()", throwing = "exception")
+    public void endThrowing(JoinPoint joinPoint, Exception exception) {
+        logger.error("aop " + joinPoint.getSignature().getName() + " endThorwing" + exception);
     }
 }

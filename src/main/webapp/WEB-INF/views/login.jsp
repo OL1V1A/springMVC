@@ -9,31 +9,31 @@
 <html>
 <head>
     <title>登录界面</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
 
-    <form action="login" name="loginForm">
-        用户名:<input type="text" name="username" id="username" /><br/>
-        密&nbsp;码:<input type="text" name="password" id="password" ><span id="warning"></span><br/>
-        <button type="button" name="submit" id="submit" onclick="doLogin()"><span>登录</span></button>
-    </form>
+<form action="login" name="loginForm">
+    用户名:<input type="text" name="username" id="username"/><br/>
+    密&nbsp;码:<input type="text" name="password" id="password"><span id="warning"></span><br/>
+    <button type="button" name="submit" id="submit" onclick="doLogin()"><span>登录</span></button>
+</form>
 
 <script type="text/javascript">
-    function doLogin(){
+    function doLogin() {
 
         var username = $("#username").val();
         var password = $("#password").val();
         $.ajax({
             type: "POST",
             url: "login",
-            data: "username="+username+"&password=" + password,
-            success: function(resp){
-                if(resp.success){
+            data: "username=" + username + "&password=" + password,
+            success: function (resp) {
+                if (resp.success) {
                     location.href = "logout";
-                }else{
-                    $("#warning").html("登录失败!").css({"color":"red"});
+                } else {
+                    $("#warning").html("登录失败!").css({"color": "red"});
 
                     //location.href = "error";
                 }

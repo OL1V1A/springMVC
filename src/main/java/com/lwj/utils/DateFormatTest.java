@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @Auth: lwj
  * @Date: 2019/4/19 9:46
  */
-public class DateFormatTest extends Thread{
+public class DateFormatTest extends Thread {
 
     private static ThreadLocal<SimpleDateFormat> sdf = new ThreadLocal<SimpleDateFormat>();
     private static final String formatStr = "yyyy-MM-dd";
@@ -21,16 +21,16 @@ public class DateFormatTest extends Thread{
     private String dateStr;
     private boolean sleep;
 
-    private static final SimpleDateFormat getDateFormat(){
+    private static final SimpleDateFormat getDateFormat() {
         SimpleDateFormat format = sdf.get();
-        if(format==null){
+        if (format == null) {
             format = new SimpleDateFormat(formatStr, Locale.CHINA);
             sdf.set(format);
         }
         return format;
     }
 
-    public DateFormatTest (String name,String dateStr,boolean sleep){
+    public DateFormatTest(String name, String dateStr, boolean sleep) {
         this.name = name;
         this.dateStr = dateStr;
         this.sleep = sleep;
@@ -39,17 +39,17 @@ public class DateFormatTest extends Thread{
     @Override
     public void run() {
         Date date = null;
-        if(sleep){
+        if (sleep) {
             try {
                 TimeUnit.MILLISECONDS.sleep(2000);
-            }catch (InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
 
         try {
             date = getDateFormat().parse(dateStr);
-        }catch (ParseException e){
+        } catch (ParseException e) {
             e.printStackTrace();
         }
 
@@ -57,9 +57,9 @@ public class DateFormatTest extends Thread{
     }
 
     public static void main(String[] args) {
-        ExecutorService executor =  Executors.newCachedThreadPool();
-        executor.execute(new DateFormatTest("A","1991-09-13",true));
-        executor.execute(new DateFormatTest("B","2013-09-13",false));
+        ExecutorService executor = Executors.newCachedThreadPool();
+        executor.execute(new DateFormatTest("A", "1991-09-13", true));
+        executor.execute(new DateFormatTest("B", "2013-09-13", false));
         executor.shutdown();
     }
 }

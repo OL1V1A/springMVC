@@ -24,18 +24,18 @@ public class LwjAop {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LwjAop.class);
 
-    private <T extends Annotation> T  getMethodAnnotation(AnnotatedElement ae , Class<T> clazz){
+    private <T extends Annotation> T getMethodAnnotation(AnnotatedElement ae, Class<T> clazz) {
 
-        String type ="";
+        String type = "";
         T ann = ae.getAnnotation(clazz);
-        if(ann != null){
+        if (ann != null) {
             Method[] methods = ann.annotationType().getDeclaredMethods();
-            for(Method method : methods){
-                if(!method.isAccessible()){
+            for (Method method : methods) {
+                if (!method.isAccessible()) {
                     method.setAccessible(true);
                 }
                 try {
-                    type = (String) method.invoke(ann,null);
+                    type = (String) method.invoke(ann, null);
                     System.out.println(type);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
@@ -63,7 +63,7 @@ public class LwjAop {
 
 
     @Pointcut("@annotation(com.lwj.Annotation.Lwj) && !@annotation(com.lwj.Annotation.AutoCache)")
-    public void pointCut(){
+    public void pointCut() {
 
     }
 
@@ -75,10 +75,10 @@ public class LwjAop {
         Class clazz = method.getClass();
         //if(clazz.isAnnotationPresent(Lwj.class)){
 
-            Lwj lwj =  method.getAnnotation(Lwj.class);
-            String type = lwj.value().getValue();
-            LOGGER.info("@Lwj class is " + name);
-            LOGGER.info("@Lwj value is " + type);
+        Lwj lwj = method.getAnnotation(Lwj.class);
+        String type = lwj.value().getValue();
+        LOGGER.info("@Lwj class is " + name);
+        LOGGER.info("@Lwj value is " + type);
         //}
         return joinPoint.proceed();
     }

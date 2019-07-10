@@ -5,28 +5,28 @@ import java.util.concurrent.TimeUnit;
 public class TestLock {
 
     private int value;
-    private  MyLock lock = new MyLock();
+    private MyLock lock = new MyLock();
 
-    private int next(){
+    private int next() {
         lock.lock();
         try {
             TimeUnit.MILLISECONDS.sleep(400);
             return value++;
         } catch (InterruptedException e) {
             throw new RuntimeException();
-        }finally {
+        } finally {
             lock.unlock();
         }
     }
 
-    public void a(){
+    public void a() {
         lock.lock();
         System.out.println("a");
         b();
         lock.unlock();
     }
 
-    public void b(){
+    public void b() {
         lock.lock();
         System.out.println("b");
         lock.unlock();

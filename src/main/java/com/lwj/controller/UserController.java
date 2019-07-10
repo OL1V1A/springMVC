@@ -24,7 +24,7 @@ import java.util.Map;
 @Lwj(value = Lwj.LwjType.OUTER)
 public class UserController {
 
-    private final static Logger LOGGER  = LoggerFactory.getLogger(UserController.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private IUserService userService;
@@ -34,18 +34,18 @@ public class UserController {
 
     @RequestMapping("/sel")
     @ResponseBody
-    public Map sel(@RequestParam int id){
+    public Map sel(@RequestParam int id) {
         Map map = new HashMap();
         Student student = studentService.selectById(id);
         JSONObject jb = JSONObject.parseObject(JSON.toJSONString(student));
-        map.put("success",true);
-        map.put("res",jb);
+        map.put("success", true);
+        map.put("res", jb);
         return map;
     }
 
     @RequestMapping("/select")
     @ResponseBody
-    public String select(@RequestParam Long id){
+    public String select(@RequestParam Long id) {
         User user = userService.getUserById(id);
         LOGGER.info("user info : " + user.toString());
         return user.toString();
@@ -53,7 +53,7 @@ public class UserController {
 
     @RequestMapping("/insert")
     @ResponseBody
-    public String select(@RequestBody User user){
+    public String select(@RequestBody User user) {
         userService.insertUser(user);
         return "操作成功";
     }

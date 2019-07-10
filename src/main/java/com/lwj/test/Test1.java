@@ -9,28 +9,30 @@ public class Test1 {
     public static void main(String[] args) {
 
         Singleton s = Singleton.getSingleton();
-        System.out.println("counter1="+s.counter1);
-        System.out.println("counter1="+s.counter2);
+        System.out.println("counter1=" + s.counter1);
+        System.out.println("counter1=" + s.counter2);
     }
 }
 
-class Singleton{
+class Singleton {
     private static Singleton singleton = new Singleton();
     public static int counter1;
-    public static int counter2=0;
+    public static int counter2 = 0;
 
     static {
         System.out.println("11111");
     }
+
     {
         System.out.println("22222");
     }
 
-    private Singleton(){
+    private Singleton() {
         counter1++;
         counter2++;
     }
-    public static Singleton getSingleton(){
+
+    public static Singleton getSingleton() {
         return singleton;
     }
 }

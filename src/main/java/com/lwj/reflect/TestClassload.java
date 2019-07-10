@@ -8,19 +8,19 @@ import java.lang.reflect.Method;
  */
 public class TestClassload {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         Class<A> clz = A.class;
         Object o = clz.newInstance();
         Method m = clz.getDeclaredMethod("foo", String.class);
-        for (int i=0;i<16;i++){
-            m.invoke(o,Integer.toString(i));
+        for (int i = 0; i < 16; i++) {
+            m.invoke(o, Integer.toString(i));
         }
     }
 
 }
 
-class A{
-    public void foo(String name){
+class A {
+    public void foo(String name) {
         System.out.println("Hello " + name);
     }
 }

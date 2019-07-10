@@ -14,11 +14,11 @@ public class Piped {
         PipedReader in = new PipedReader();
         PipedWriter out = new PipedWriter();
         out.connect(in);
-        Thread printThread = new Thread(new Print(in),"printThread");
+        Thread printThread = new Thread(new Print(in), "printThread");
         printThread.start();
         int receive = 0;
         try {
-            while ((receive = System.in.read()) != -1){
+            while ((receive = System.in.read()) != -1) {
 
                 out.write(receive);
             }
@@ -27,9 +27,10 @@ public class Piped {
         }
     }
 
-    static class Print implements Runnable{
+    static class Print implements Runnable {
         private PipedReader in;
-        public Print(PipedReader in){
+
+        public Print(PipedReader in) {
             this.in = in;
         }
 
@@ -38,9 +39,9 @@ public class Piped {
 
             int receive = 0;
             try {
-                while ((receive = in.read()) !=-1){
+                while ((receive = in.read()) != -1) {
 
-                    System.out.print((char)receive);
+                    System.out.print((char) receive);
                 }
             } catch (IOException e) {
                 e.printStackTrace();

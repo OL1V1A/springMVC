@@ -11,6 +11,7 @@ public class Synchronized {
         }
         m();
     }
+
     public static synchronized void m() {
     }
 

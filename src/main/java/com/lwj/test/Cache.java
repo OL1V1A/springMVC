@@ -11,12 +11,13 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class Cache {
 
-    static Map<String,Object> map = new HashMap<>();
+    static Map<String, Object> map = new HashMap<>();
     static ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
     static Lock r = rwl.readLock();
     static Lock w = rwl.writeLock();
+
     //获取一个key对应的value
-    public static final Object get(String key){
+    public static final Object get(String key) {
         r.lock();
         try {
             return map.get(key);
@@ -24,17 +25,19 @@ public class Cache {
             r.unlock();
         }
     }
+
     //设置key的value并返回旧的value
-    public static  final Object put(String key,Object value){
+    public static final Object put(String key, Object value) {
         w.lock();
         try {
-            return map.put(key,value);
+            return map.put(key, value);
         } finally {
             w.unlock();
         }
     }
+
     //清空所有的内容
-    public static final void clear(){
+    public static final void clear() {
         w.lock();
         try {
             map.clear();

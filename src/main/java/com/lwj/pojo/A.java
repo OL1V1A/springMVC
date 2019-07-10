@@ -6,7 +6,7 @@ package com.lwj.pojo;
  */
 public class A {
 
-    public A(){
+    public A() {
         System.out.println("A");
     }
 
@@ -15,17 +15,17 @@ public class A {
     }
 
     B b = new B();
-    public static  C c = new C();
+    public static C c = new C();
 }
 
-class B{
-    public B(){
+class B {
+    public B() {
         System.out.println("B");
     }
 }
 
-class C{
-    public C(){
+class C {
+    public C() {
         System.out.println("C");
     }
 }

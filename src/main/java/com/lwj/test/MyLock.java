@@ -4,7 +4,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
-public class MyLock implements Lock{
+
+public class MyLock implements Lock {
 
     private Helper helper = new Helper();
 
@@ -25,7 +26,7 @@ public class MyLock implements Lock{
 
     @Override
     public boolean tryLock(long time, TimeUnit unit) throws InterruptedException {
-        return helper.tryAcquireNanos(1,unit.toNanos(time));
+        return helper.tryAcquireNanos(1, unit.toNanos(time));
     }
 
     @Override
@@ -38,7 +39,7 @@ public class MyLock implements Lock{
         return helper.newCondition();
     }
 
-    private class Helper extends AbstractQueuedSynchronizer{
+    private class Helper extends AbstractQueuedSynchronizer {
         @Override
         protected boolean tryAcquire(int arg) {
 
@@ -50,12 +51,12 @@ public class MyLock implements Lock{
             //如何判断是第一个线程还是其他线程进来
             int state = getState();
             Thread t = Thread.currentThread();
-            if (state == 0){
-                if (compareAndSetState(0,arg)){
+            if (state == 0) {
+                if (compareAndSetState(0, arg)) {
                     setExclusiveOwnerThread(t);
                     return true;
                 }
-            }else if(getExclusiveOwnerThread() == t){
+            } else if (getExclusiveOwnerThread() == t) {
                 setState(state + 1);
                 return true;
             }
@@ -66,12 +67,12 @@ public class MyLock implements Lock{
         protected boolean tryRelease(int arg) {
 
             //锁的获取和释放肯定是一一对应的，那么调用此方法的线程一定是当前线程
-            if (Thread.currentThread() != getExclusiveOwnerThread()){
-                throw  new RuntimeException();
+            if (Thread.currentThread() != getExclusiveOwnerThread()) {
+                throw new RuntimeException();
             }
             int state = getState() - arg;
             boolean flag = false;
-            if(state == 0){
+            if (state == 0) {
                 setExclusiveOwnerThread(null);
                 flag = true;
             }
@@ -79,7 +80,7 @@ public class MyLock implements Lock{
             return flag;
         }
 
-        public Condition newCondition(){
+        public Condition newCondition() {
             return helper.newCondition();
         }
     }

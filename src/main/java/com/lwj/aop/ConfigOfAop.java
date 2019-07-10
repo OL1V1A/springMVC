@@ -9,12 +9,12 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class ConfigOfAop {
 
     @Bean
-    public Div div(){
+    public Div div() {
         return new Div();
     }
 
     @Bean
-    public LogAop logAop(){
+    public LogAop logAop() {
         return new LogAop();
     }
 }

@@ -16,22 +16,24 @@ public class CacheUtil {
 
     private static Logger log = LoggerFactory.getLogger(CacheUtil.class);
 
-    private Map<String,Object> cache;
-    public CacheUtil(){
+    private Map<String, Object> cache;
+
+    public CacheUtil() {
         cache = new ConcurrentHashMap<>();
     }
 
     /**
      * 读取缓存
+     *
      * @param key
      * @return
      */
-    public Object getCache(String key){
-        if (isCached(key)){
+    public Object getCache(String key) {
+        if (isCached(key)) {
             Object bean = cache.get(key);
-            log.info("读取缓存成功 key="+key+" \t value="+bean );
+            log.info("读取缓存成功 key=" + key + " \t value=" + bean);
             return bean;
-        }else{
+        } else {
             System.out.println("key不存在");
             return null;
         }
@@ -39,16 +41,17 @@ public class CacheUtil {
 
     /**
      * 写入缓存
+     *
      * @param key
      * @param bean
      * @return
      */
-    public boolean writeCache(String key, Object bean){
-        if (!isCached(key)){
-            cache.put(key,bean);
-            log.info("写入缓存成功：key="+key+"\t value="+bean);
+    public boolean writeCache(String key, Object bean) {
+        if (!isCached(key)) {
+            cache.put(key, bean);
+            log.info("写入缓存成功：key=" + key + "\t value=" + bean);
             return true;
-        }else{
+        } else {
             log.info("key已存在");
             return false;
         }
@@ -56,26 +59,28 @@ public class CacheUtil {
 
     /**
      * 判断是否存在缓存
+     *
      * @param key
      * @return
      */
-    public boolean isCached(String key){
+    public boolean isCached(String key) {
         return cache.containsKey(key);
 
     }
 
     /**
      * 修改缓存
+     *
      * @param key
      * @param bean
      * @return
      */
-    public boolean setCache(String key,Object bean){
-        if(isCached(key)){
+    public boolean setCache(String key, Object bean) {
+        if (isCached(key)) {
 
-            cache.put(key,bean);
+            cache.put(key, bean);
             return true;
-        }else{
+        } else {
             log.info("key 不存在");
             return false;
         }

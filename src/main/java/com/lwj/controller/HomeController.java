@@ -23,12 +23,10 @@ public class HomeController {
     @RequestMapping("/index")
     @Lwj(value = Lwj.LwjType.AFTER)
     @AutoCache
-    public String index(HttpServletRequest request){
+    public String index(HttpServletRequest request) {
 
         LOGGER.info("the first jsp pages");
         return "index";
-
-
 
 
     }

@@ -12,11 +12,11 @@ public class AppTest {
     public static void main(String[] args) {
         BeanFactory bf = new ClassPathXmlApplicationContext("applicationContext.xml");
         ICacheService cacheService = (ICacheService) bf.getBean("cacheService");
-        for (int i=0;i<5;i++){
+        for (int i = 0; i < 5; i++) {
             String result = cacheService.shit();
-            System.out.println("shit()方法执行结果是："+result);
+            System.out.println("shit()方法执行结果是：" + result);
             System.out.println("================================");
         }
-        System.out.println("Apptest最终的cacheService="+cacheService.getClass().getName());
+        System.out.println("Apptest最终的cacheService=" + cacheService.getClass().getName());
     }
 }

@@ -11,8 +11,8 @@ public class Join {
     public static void main(String[] args) throws InterruptedException {
 
         Thread previous = Thread.currentThread();
-        for(int i=0;i<10;i++){
-            Thread thread = new Thread(new Domino(previous),String.valueOf(i));
+        for (int i = 0; i < 10; i++) {
+            Thread thread = new Thread(new Domino(previous), String.valueOf(i));
             thread.start();
             previous = thread;
         }
@@ -20,17 +20,19 @@ public class Join {
         System.out.println(Thread.currentThread().getName() + " main");
     }
 
-    static class Domino implements Runnable{
+    static class Domino implements Runnable {
 
         private Thread thread;
-        public Domino(Thread thread){
+
+        public Domino(Thread thread) {
             this.thread = thread;
         }
+
         @Override
         public void run() {
             try {
                 thread.join();
-                System.out.print(thread.getName()+"---");
+                System.out.print(thread.getName() + "---");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -21,12 +21,12 @@ public class WaitNotify {
         notifyThread.start();
     }
 
-    static class Wait implements Runnable{
+    static class Wait implements Runnable {
         @Override
         public void run() {
-            synchronized (lock){
-                while (flag){
-                    System.out.println(Thread.currentThread() + "flag is true. wait@"+new SimpleDateFormat("HH:mm:ss").format(new Date()));
+            synchronized (lock) {
+                while (flag) {
+                    System.out.println(Thread.currentThread() + "flag is true. wait@" + new SimpleDateFormat("HH:mm:ss").format(new Date()));
                     try {
                         lock.wait();
                     } catch (Exception e) {
@@ -38,10 +38,10 @@ public class WaitNotify {
         }
     }
 
-    static class Notify implements Runnable{
+    static class Notify implements Runnable {
         @Override
         public void run() {
-            synchronized (lock){
+            synchronized (lock) {
                 System.out.println(Thread.currentThread() + " hold lock. notify @ " +
                         new SimpleDateFormat("HH:mm:ss").format(new Date()));
                 lock.notify();
@@ -52,7 +52,7 @@ public class WaitNotify {
                     e.printStackTrace();
                 }
             }
-            synchronized (lock){
+            synchronized (lock) {
                 System.out.println(Thread.currentThread() + " hold lock again. sleep@ " + new SimpleDateFormat("HH:mm:ss").format(new Date()));
                 try {
                     TimeUnit.SECONDS.sleep(5);

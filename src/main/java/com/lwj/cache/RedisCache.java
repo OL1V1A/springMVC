@@ -12,7 +12,7 @@ import redis.clients.jedis.JedisPoolConfig;
 public class RedisCache {
 
     public static void main(String[] args) {
-        RedisCache.initJedisPool("47.98.117.161",6379,null,2000);
+        RedisCache.initJedisPool("47.98.117.161", 6379, null, 2000);
         //RedisCache.setNx("redisdemo3","hahha");
 //        delCache("testUser");
         String s = getCache("k2");
@@ -21,68 +21,68 @@ public class RedisCache {
 
     public static JedisPool jedisPool;
 
-    public static synchronized void initJedisPool (JedisPool inJedisPool){
+    public static synchronized void initJedisPool(JedisPool inJedisPool) {
         jedisPool = inJedisPool;
     }
 
-    public static synchronized void initJedisPool(String host,Integer port,String secretKey,Integer timeout){
-         initJedisPool(host,port,secretKey,timeout,new JedisPoolConfig());
+    public static synchronized void initJedisPool(String host, Integer port, String secretKey, Integer timeout) {
+        initJedisPool(host, port, secretKey, timeout, new JedisPoolConfig());
     }
 
-    public static synchronized void initJedisPool(String host,Integer port,String secretKey,Integer timeout,
-                                                  JedisPoolConfig jedisPoolConfig){
-        if(StringUtil.isNullOrEmpty(secretKey)){
+    public static synchronized void initJedisPool(String host, Integer port, String secretKey, Integer timeout,
+                                                  JedisPoolConfig jedisPoolConfig) {
+        if (StringUtil.isNullOrEmpty(secretKey)) {
             secretKey = null;
         }
-        JedisPool inJedisPool = new JedisPool(new JedisPoolConfig(),host,port,10000,secretKey);
+        JedisPool inJedisPool = new JedisPool(new JedisPoolConfig(), host, port, 10000, secretKey);
         initJedisPool(inJedisPool);
     }
 
-    public static Integer setNx(String key,String value){
-        return setNx(key,value,null);
+    public static Integer setNx(String key, String value) {
+        return setNx(key, value, null);
     }
 
-    public static Integer setNx(String key,String value,Integer expire){
+    public static Integer setNx(String key, String value, Integer expire) {
         Jedis jedis = jedisPool.getResource();
         try {
-            Long result = jedis.setnx(key,value);
-            if (expire != null){
-                jedis.expire(key,expire);
+            Long result = jedis.setnx(key, value);
+            if (expire != null) {
+                jedis.expire(key, expire);
             }
             return result.intValue();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return 0;
-        }finally {
-            if (jedis != null){
+        } finally {
+            if (jedis != null) {
                 jedis.close();
             }
         }
     }
 
 
-    public static void delCache(String key){
+    public static void delCache(String key) {
         Jedis jedis = jedisPool.getResource();
         try {
             jedis.del(key);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
-            if (jedis != null){
+        } finally {
+            if (jedis != null) {
                 jedis.close();
             }
         }
     }
 
-    public static String getCache(String key){
+    public static String getCache(String key) {
         Jedis jedis = jedisPool.getResource();
         try {
             return jedis.get(key);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }finally {
-            if (jedis != null){
+        } finally {
+            if (jedis != null) {
                 jedis.close();
             }
         }

@@ -11,15 +11,15 @@ import java.util.concurrent.locks.ReentrantLock;
 public class Profile {
     private static final ThreadLocal<Long> TIME_THREADLOCAL = new ThreadLocal<>();
 
-    protected static Long initialValue(){
+    protected static Long initialValue() {
         return System.currentTimeMillis();
     }
 
-    public static final void begin(){
+    public static final void begin() {
         TIME_THREADLOCAL.set(initialValue());
     }
 
-    public static final long end(){
+    public static final long end() {
         return initialValue() - TIME_THREADLOCAL.get();
     }
 

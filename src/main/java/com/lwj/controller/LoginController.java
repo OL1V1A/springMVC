@@ -21,68 +21,68 @@ public class LoginController {
 
     @RequestMapping("/json")
     @ResponseBody
-    public Map json(){
-        Map<String,Object> map = new HashMap<>();
-        map.put("1","java");
-        map.put("2","c#");
-        map.put("3","python");
+    public Map json() {
+        Map<String, Object> map = new HashMap<>();
+        map.put("1", "java");
+        map.put("2", "c#");
+        map.put("3", "python");
         return map;
     }
 
-    @RequestMapping(value = "upload",method = RequestMethod.GET)
-    public String upload(){
+    @RequestMapping(value = "upload", method = RequestMethod.GET)
+    public String upload() {
         return "upload";
     }
 
-    @RequestMapping(value = "/file/upload" ,method = RequestMethod.POST,produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/file/upload", method = RequestMethod.POST, produces = {"application/json;charset=UTF-8"})
     @ResponseBody
-    public String load(@RequestParam("file")  MultipartFile file) throws IOException {
+    public String load(@RequestParam("file") MultipartFile file) throws IOException {
         String folder = "D:\\workspace\\idea\\springMVC\\src\\main\\java\\com\\lwj\\controller";
         String fileName = file.getOriginalFilename();
         System.out.println(fileName);
-        File file1 =new File(folder,System.currentTimeMillis()+".xlsx");
+        File file1 = new File(folder, System.currentTimeMillis() + ".xlsx");
         file.transferTo(file1);
         return "上传成功";
     }
 
-    @RequestMapping(value = "log-in",method = RequestMethod.GET)
-    public String log_in(){
+    @RequestMapping(value = "log-in", method = RequestMethod.GET)
+    public String log_in() {
         return "/login";
     }
 
-    @RequestMapping(value = "/logout",method = RequestMethod.GET)
-    public String logout(){
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    public String logout() {
         return "success";
     }
 
-    @RequestMapping(value = "/error",method = RequestMethod.GET)
-    public String error(){
+    @RequestMapping(value = "/error", method = RequestMethod.GET)
+    public String error() {
         return "error";
     }
 
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
     @Lwj(value = Lwj.LwjType.AFTER)
     @ResponseBody
-    public Map login(String username,String password){
+    public Map login(String username, String password) {
 
         Map map = new HashMap();
 
         Subject currentUser = SecurityUtils.getSubject();
-            UsernamePasswordToken token = new UsernamePasswordToken(username,password);
-            token.setRememberMe(true);
-            try{
-                currentUser.login(token);
-                if(currentUser.isAuthenticated()){
+        UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+        token.setRememberMe(true);
+        try {
+            currentUser.login(token);
+            if (currentUser.isAuthenticated()) {
 
-                    System.out.println("登陆成功");
-                }
-                map.put("success",true);
-            }catch (Exception ae){
-                System.out.println("登录失败--->" + ae.getMessage());
-                map.put("success",false);
+                System.out.println("登陆成功");
             }
+            map.put("success", true);
+        } catch (Exception ae) {
+            System.out.println("登录失败--->" + ae.getMessage());
+            map.put("success", false);
+        }
 
-            return map;
+        return map;
 
 
     }

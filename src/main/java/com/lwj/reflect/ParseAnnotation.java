@@ -13,20 +13,20 @@ import java.lang.reflect.Parameter;
  */
 public class ParseAnnotation {
 
-    public static<T> void parseMethod(Class<T> clazz){
+    public static <T> void parseMethod(Class<T> clazz) {
         try {
             T obj = clazz.newInstance();
             for (Method method : clazz.getDeclaredMethods()) {
                 System.out.println(method.getName());
                 for (Parameter parameter : method.getParameters()) {
-                    if (parameter.getAnnotations()!=null) {
+                    if (parameter.getAnnotations() != null) {
                         for (Annotation annotation : parameter.getAnnotations()) {
 
                             System.out.println(annotation.annotationType().getName());
                         }
                     }
                 }
-                method.invoke(obj,method.getName());
+                method.invoke(obj, method.getName());
                 System.out.println("=================");
             }
         } catch (Exception e) {

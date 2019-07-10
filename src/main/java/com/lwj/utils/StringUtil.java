@@ -55,14 +55,14 @@ public class StringUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(isOneEmpty("1","2","3",null));
+        System.out.println(isOneEmpty("1", "2", "3", null));
     }
 
 
     public static Boolean isAllEmpty(Object... o) {
         Object[] arr = o;
         for (int i = 0; i < o.length; i++) {
-            if (!isNullOrEmpty(o[i]));
+            if (!isNullOrEmpty(o[i])) ;
             return false;
         }
         return true;

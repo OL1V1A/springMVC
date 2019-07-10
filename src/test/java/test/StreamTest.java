@@ -13,20 +13,20 @@ import java.util.stream.Stream;
 public class StreamTest {
 
     @Test
-    public void testStream1(){
-        Stream.of("1","22","3333","4444","55555").forEach(System.out::println);
+    public void testStream1() {
+        Stream.of("1", "22", "3333", "4444", "55555").forEach(System.out::println);
     }
 
     @Test
-    public void testStream2(){
-        Stream.of("1","22","3333","4444","55555").filter(x->x.length()>2).forEach(System.out::println);
+    public void testStream2() {
+        Stream.of("1", "22", "3333", "4444", "55555").filter(x -> x.length() > 2).forEach(System.out::println);
 
     }
 
     @Test
-    public void testList(){
+    public void testList() {
         List<String> list = new ArrayList<String>();
-        List<String> list1= new ArrayList<String>();
+        List<String> list1 = new ArrayList<String>();
         list.add("1");
         list.add("2");
         list.add("3");
@@ -35,7 +35,7 @@ public class StreamTest {
         list.add("3");
 
         list.stream().forEach(x -> {
-            if (x.equals("3")){
+            if (x.equals("3")) {
 //                list.remove(x);
                 list1.add(x);
             }
@@ -59,14 +59,21 @@ public class StreamTest {
         email.from("foreverdnmy@163.com").to("754524103@qq.com");
         email.subject("主题测试");
         email.textMessage("看看text");
-        email.htmlMessage("<html><META http-equiv=Content-Type content=\"text/html; charset=utf-8\"><body><h1>测试一下</h1></body></html>","utf-8");
+        email.htmlMessage("<html><META http-equiv=Content-Type content=\"text/html; charset=utf-8\"><body><h1>测试一下</h1></body></html>", "utf-8");
         email.embeddedAttachment(EmailAttachment.with().content(new File("C:\\Users\\Lenovo\\Desktop\\招标\\招标公告.pdf")));
-        SmtpServer server = MailServer.create().host("smtp.163.com").auth("foreverdnmy@163.com","lywyjy1314").buildSmtpMailServer();
+        SmtpServer server = MailServer.create().host("smtp.163.com").auth("foreverdnmy@163.com", "lywyjy1314").buildSmtpMailServer();
         SendMailSession session = server.createSession();
 
         session.open();
         session.sendMail(email);
         session.close();
         System.out.println("========");
+    }
+
+    @Test
+    public void cul() {
+        int running = 2 << (Integer.MAX_VALUE - 3);
+        System.out.println(Integer.toBinaryString(running));
+        System.out.println(Integer.toBinaryString(3 << 29));
     }
 }

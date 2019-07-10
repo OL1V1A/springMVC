@@ -23,18 +23,18 @@ public class TestBean {
 
 
     @Test
-    public void testBean(){
+    public void testBean() {
 //        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("applicationContext-test.xml"));
         ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext-test.xml");
         MyTestBean mt = (MyTestBean) ac.getBean("beanstr");
-        Assert.assertEquals("beanstr",mt.getBeanstr());
+        Assert.assertEquals("beanstr", mt.getBeanstr());
     }
 
     @Test
-    public void testaop(){
+    public void testaop() {
         AnnotationConfigApplicationContext aa = new AnnotationConfigApplicationContext(ConfigOfAop.class);
         Div div = (Div) aa.getBean("div");
-        div.div(1,1);
+        div.div(1, 1);
 //        Supplier<String> supplier = ()-> {if(2>1) return "0";return "1";};
         Supplier<User> supplier = User::new;
         User user1 = supplier.get();
@@ -45,23 +45,23 @@ public class TestBean {
     }
 
     @Test
-    public void double1(){
+    public void double1() {
 
-        double a=2;
-        double b=1.1;
+        double a = 2;
+        double b = 1.1;
         System.out.println(new BigDecimal(Double.toString(a)).subtract(new BigDecimal(Double.toString(b))));
 
     }
 
     @Test
     public void cmd() {
-        Process p =null;
+        Process p = null;
         Runtime runtime = Runtime.getRuntime();
         try {
             p = runtime.exec("cmd /c start gpedit.msc");
             Thread.sleep(10000);
             p.destroy();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

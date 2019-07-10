@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class MyIntercepter implements MethodInterceptor {
     @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
-        methodProxy.invokeSuper(o,objects);
+        methodProxy.invokeSuper(o, objects);
         return null;
     }
 }

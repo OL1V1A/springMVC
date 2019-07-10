@@ -32,7 +32,7 @@ public class UserServiceImpl implements IUserService {
 
     @Transactional(value = "transactionManager")
     public void updateById(long id) throws Exception {
-            userDao.updateById(id);
+        userDao.updateById(id);
 //        try{
 //            int c = 1/0;
 //        }catch(Exception e){

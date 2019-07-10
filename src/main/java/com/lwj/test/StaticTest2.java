@@ -8,16 +8,21 @@ public class StaticTest2 {
 
     static {
         System.out.println("静态代码块1");
-    } static {
+    }
+
+    static {
         System.out.println("静态代码块2");
     }
+
     {
         System.out.println("构造代码块1");
     }
+
     {
         System.out.println("构造代码块2");
     }
-    public StaticTest2(){
+
+    public StaticTest2() {
         System.out.println("构造方法");
     }
 

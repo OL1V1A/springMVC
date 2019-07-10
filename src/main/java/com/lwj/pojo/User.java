@@ -7,7 +7,7 @@ public class User {
     private String password;
     private String phone;
 
-    public User(){
+    public User() {
 
     }
 
@@ -45,6 +45,6 @@ public class User {
 
     @Override
     public String toString() {
-        return "User['id = '"+id+",'name = '"+name+",'password = '"+password+",'phone = '"+phone+"]";
+        return "User['id = '" + id + ",'name = '" + name + ",'password = '" + password + ",'phone = '" + phone + "]";
     }
 }

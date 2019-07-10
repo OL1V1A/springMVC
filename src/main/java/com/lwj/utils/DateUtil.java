@@ -16,31 +16,31 @@ public class DateUtil {
 
     private static final String[] weeks = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
 
-    public static String getWeek(Date date){
+    public static String getWeek(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) - 1;
-        if (dayOfWeek < 0){
+        if (dayOfWeek < 0) {
             dayOfWeek = 0;
         }
         return weeks[dayOfWeek];
     }
 
 
-    public static String toString(Date date,String format){
-        if (date == null){
+    public static String toString(Date date, String format) {
+        if (date == null) {
             return null;
         }
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.format(date);
     }
 
-    public static String toString(Date date){
-        return toString(date,DATETIME_PATTERN);
+    public static String toString(Date date) {
+        return toString(date, DATETIME_PATTERN);
     }
 
-    public static String toDateString(Date date){
-        return toString(date,DATE_PATTERN);
+    public static String toDateString(Date date) {
+        return toString(date, DATE_PATTERN);
     }
 
     public static void main(String[] args) {

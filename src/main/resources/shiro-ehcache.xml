@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ehcache >
-<cache name="authorizationCache"
-       maxEntriesLocalHeap="2000"
-       eternal="false"
-       timeToIdleSeconds="3600"
-       timeToLiveSeconds="0"
-       overflowToDisk="false"
-       statistics="true">
-</cache>
-        <!-- 认证缓存 -->
-<cache name="authenticationCache"
-       maxEntriesLocalHeap="2000"
-       eternal="false"
-       timeToIdleSeconds="3600"
-       timeToLiveSeconds="0"
-       overflowToDisk="false"
-       statistics="true">
-</cache>
+<ehcache>
+    <cache name="authorizationCache"
+           maxEntriesLocalHeap="2000"
+           eternal="false"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="0"
+           overflowToDisk="false"
+           statistics="true">
+    </cache>
+    <!-- 认证缓存 -->
+    <cache name="authenticationCache"
+           maxEntriesLocalHeap="2000"
+           eternal="false"
+           timeToIdleSeconds="3600"
+           timeToLiveSeconds="0"
+           overflowToDisk="false"
+           statistics="true">
+    </cache>
 </ehcache>
